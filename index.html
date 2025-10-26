@@ -126,78 +126,55 @@
   <h2 class="fade-in">Contáctanos</h2>
   <p>¿Tienes preguntas o deseas más información? Completa el formulario y te responderemos pronto.</p>
   
-  <form id="contact-form" action="https://formsubmit.co/radimelfi.bautista01@hotmail.com" method="POST">
-    
-    <!-- ===== CONFIGURACIÓN DE FORMSUBMIT ===== -->
-    <!-- Desactivar captcha -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Protección anti-spam (campo invisible) -->
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-    
-    <!-- Asunto del email -->
-    <input type="hidden" name="_subject" value="Nuevo mensaje desde DataSpark Web">
-    
-    <!-- Formato del email (tabla se ve mejor) -->
-    <input type="hidden" name="_template" value="table">
-    
-    <!-- Auto-respuesta al cliente -->
-    <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto. - Equipo DataSpark">
-    
-    <!-- Página de agradecimiento (opcional - comentada por ahora) -->
-    <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> -->
-    
-    <!-- ===== CAMPOS DEL FORMULARIO ===== -->
-    <label for="name">Nombre completo *</label>
-    <input 
-      type="text" 
-      id="name" 
-      name="Nombre" 
-      required 
-      placeholder="Ej: Juan Pérez"
-      minlength="3"
-      maxlength="100">
+ <form id="contact-form" action="https://formspree.io/f/mqagazgq" method="POST">
+  
+  <label for="name">Nombre completo *</label>
+  <input 
+    type="text" 
+    id="name" 
+    name="name" 
+    required 
+    placeholder="Ej: Juan Pérez"
+    minlength="3"
+    maxlength="100">
 
-    <label for="email">Correo electrónico *</label>
-    <input 
-      type="email" 
-      id="email" 
-      name="Email" 
-      required 
-      placeholder="Ej: juan@ejemplo.com"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+  <label for="email">Correo electrónico *</label>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    required 
+    placeholder="Ej: juan@ejemplo.com">
 
-    <label for="phone">Teléfono (opcional)</label>
-    <input 
-      type="tel" 
-      id="phone" 
-      name="Teléfono" 
-      placeholder="Ej: +1 809 123 4567"
-      pattern="[\d\s\+\-\(\)]+">
+  <label for="phone">Teléfono (opcional)</label>
+  <input 
+    type="tel" 
+    id="phone" 
+    name="phone" 
+    placeholder="Ej: +1 809 123 4567">
 
-    <label for="company">Empresa (opcional)</label>
-    <input 
-      type="text" 
-      id="company" 
-      name="Empresa" 
-      placeholder="Nombre de tu empresa"
-      maxlength="100">
+  <label for="company">Empresa (opcional)</label>
+  <input 
+    type="text" 
+    id="company" 
+    name="company" 
+    placeholder="Nombre de tu empresa"
+    maxlength="100">
 
-    <label for="message">Mensaje *</label>
-    <textarea 
-      id="message" 
-      name="Mensaje" 
-      required 
-      placeholder="Cuéntanos qué necesitas..."
-      minlength="10"
-      maxlength="1000"
-      rows="6"></textarea>
+  <label for="message">Mensaje *</label>
+  <textarea 
+    id="message" 
+    name="message" 
+    required 
+    placeholder="Cuéntanos qué necesitas..."
+    minlength="10"
+    maxlength="1000"
+    rows="6"></textarea>
 
-    <button type="submit" id="submit-btn">
-      <span id="btn-text">📧 Enviar mensaje</span>
-      <span id="btn-loading" style="display: none;">⏳ Enviando...</span>
-    </button>
-  </form>
+  <button type="submit" id="submit-btn">
+    📧 Enviar mensaje
+  </button>
+</form>
 
   <!-- Mensajes de estado -->
   <div id="form-status"></div>
@@ -370,4 +347,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
