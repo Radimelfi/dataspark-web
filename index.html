@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DataSpark - Consultoría en Inteligencia de Negocios, Análisis de Datos y Automatización. Dashboards interactivos, ETL y soluciones basadas en datos.">
+  <meta name="keywords" content="business intelligence, análisis de datos, power bi, tableau, consultoría, automatización, ETL">
+  <meta name="author" content="DataSpark">
+  <title>DataSpark | Consultoría en BI y Análisis de Datos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header> 
+    <div class="header-content">
+      <h1>DataSpark</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#reportes">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section id="about" class="about-section">
+  <div class="about-container">
+    <img src="reportes/Foto perfil.jpeg" alt="Radimelfi Bautista Antigua" class="about-photo">
+    <div class="about-text">
+      <h2>Perfil Profesional</h2>
+      <p>
+        <strong>Radimelfi Bautista Antigua</strong>, <strong>Lic. en Economia</strong> Cun Laude egresada de la Universidad 
+        Autonoma De Santo Domingo (UASD) con más de <strong>3 años de experiencia</strong> en el <strong>Sector Turismo</strong>, especializado en 
+        <strong>análisis de datos</strong> y en la mejora de procesos administrativos.
+      </p>
+      <p>
+        Mi propósito es transformar los datos en estrategias efectivas que impulsen la eficiencia operativa,
+        la innovación y la toma de decisiones empresariales basadas en información real.
+      </p>
+     
+    </div>
+  </div>
+</section>
+
+  <section id="inicio">
+    <h2 class="fade-in">¿Quiénes somos?</h2>
+    <p class="fade-in">DataSpark es una empresa especializada en inteligencia de negocios, análisis de datos y automatización, está diseñada para optimizar la toma de decisiones y reducir el tiempo de trabajo mediante la automatización de procesos. Ofrecemos soluciones basadas en datos que permiten maximizar el modelo de negocio, mejorar la eficiencia operativa y aumentar la rentabilidad.</p>
+  </section>
+
+
+
+  <section id="servicios">
+    <h2 class="fade-in">Servicios que ofrecemos</h2>
+    <div class="servicios-container">
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/combo-chart--v1.png" alt="Dashboards">
+        <h3>Dashboards Interactivos</h3>
+        <p>Con Power BI, Tableau y otras herramientas líderes. Creación de Dashboards Financieros, Reportes de Cartera, Gestión de Clientes y otras áreas.</p>
+      </div>
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/automation.png" alt="Automatización">
+        <h3>Automatización de Procesos</h3>
+        <p>Uso de tecnología para ejecutar tareas repetitivas de forma automática, mejorando eficiencia y reduciendo errores.</p>
+      </div>
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/data-backup.png" alt="ETL">
+        <h3>Procesos ETL</h3>
+        <p>Extracción, transformación y carga de datos. Extraemos datos de distintas fuentes, los limpiamos y transformamos, luego los cargamos en sistemas de destino para análisis.</p>
+      </div>
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/email-send.png" alt="Campañas">
+        <h3>Envío de Campañas</h3>
+        <p>Envío de mensajes promocionales o informativos para promocionar productos, servicios o eventos de manera efectiva.</p>
+      </div>
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/data-configuration.png" alt="Integración">
+        <h3>Integración de Datos</h3>
+        <p>Conectamos múltiples fuentes de datos para una visión unificada y análisis completo de tu negocio.</p>
+      </div>
+      <div class="servicio fade-in">
+        <img src="https://img.icons8.com/color/96/business-report.png" alt="Calidad">
+        <h3>Gestión de Calidad de Datos</h3>
+        <p>Monitoreamos y mantenemos la precisión y consistencia de los datos a lo largo del tiempo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reportes">
+    <h2 class="fade-in">Galería de Análisis de Datos</h2>
+    <p class="fade-in">Haz clic en las imágenes para ampliarlas y ver nuestros proyectos.</p>
+    <div class="reportes-container fade-in">
+      <img src="reportes/Proyecto 1 Analisis Ventas video Juegos (1)_page-0001.jpg" alt="Reporte 1" class="reporte-img" onclick="openModal(this.src)">
+      <img src="reportes/Proyecto 2 Analisis de la Poblacion_Mortalidad.jpg" alt="Reporte 2" class="reporte-img" onclick="openModal(this.src)">
+      <img src="reportes/Proyecto 2 Analisis de la Poblacion.jpg" alt="Reporte 3" class="reporte-img" onclick="openModal(this.src)">
+      <img src="reportes/Proyecto 3 Analisis Gestion.jpg" alt="Reporte 4" class="reporte-img" onclick="openModal(this.src)">
+    </div>
+  </section>
+
+  <div id="modal" onclick="closeModal()">
+    <img id="modal-img" src="" alt="Vista ampliada">
+  </div>
+
+  <section id="razones-consultoria">
+    <h2 class="fade-in">¿Por qué las empresas necesitan consultoría de análisis de datos?</h2>
+    <div class="razones-grid">
+      <div class="razon-box">📊 Sobrecarga de datos</div>
+      <div class="razon-box">❌ Falta de experiencia</div>
+      <div class="razon-box">⚠️ Mala calidad de los datos</div>
+      <div class="razon-box">🔗 Datos aislados</div>
+      <div class="razon-box">🔄 Dificultad para integrar fuentes</div>
+      <div class="razon-box">📉 Conocimientos prácticos limitados</div>
+      <div class="razon-box">🔒 Seguridad y privacidad</div>
+      <div class="razon-box">💰 Costes elevados de infraestructura</div>
+      <div class="razon-box">📦 Falta de escalabilidad</div>
+      <div class="razon-box">⏱ Procesos manuales lentos</div>
+      <div class="razon-box">🔮 Incapacidad para prever tendencias</div>
+      <div class="razon-box">⚙️ Evolución tecnológica constante</div>
+    </div>
+    <div class="razones-text">
+      <p>DataSpark impulsa decisiones empresariales basadas en datos mediante herramientas de código abierto. Utilizamos Power BI, SQL Server, Python y R Studio para crear soluciones analíticas eficientes y accesibles, adaptadas a las necesidades y presupuesto de cada organización.</p>
+    </div>
+  </section>
+
+<section id="contacto">
+  <h2 class="fade-in">Contáctanos</h2>
+  <p>¿Tienes preguntas o deseas más información? Completa el formulario y te responderemos pronto.</p>
+  
+  <form id="contact-form" action="https://formsubmit.co/radimelfi.bautista01@hotmail.com" method="POST">
+    
+    <!-- ===== CONFIGURACIÓN DE FORMSUBMIT ===== -->
+    <!-- Desactivar captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Protección anti-spam (campo invisible) -->
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    
+    <!-- Asunto del email -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde DataSpark Web">
+    
+    <!-- Formato del email (tabla se ve mejor) -->
+    <input type="hidden" name="_template" value="table">
+    
+    <!-- Auto-respuesta al cliente -->
+    <input type="hidden" name="_autoresponse" value="Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto. - Equipo DataSpark">
+    
+    <!-- Página de agradecimiento (opcional - comentada por ahora) -->
+    <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> -->
+    
+    <!-- ===== CAMPOS DEL FORMULARIO ===== -->
+    <label for="name">Nombre completo *</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="Nombre" 
+      required 
+      placeholder="Ej: Juan Pérez"
+      minlength="3"
+      maxlength="100">
+
+    <label for="email">Correo electrónico *</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="Email" 
+      required 
+      placeholder="Ej: juan@ejemplo.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+    <label for="phone">Teléfono (opcional)</label>
+    <input 
+      type="tel" 
+      id="phone" 
+      name="Teléfono" 
+      placeholder="Ej: +1 809 123 4567"
+      pattern="[\d\s\+\-\(\)]+">
+
+    <label for="company">Empresa (opcional)</label>
+    <input 
+      type="text" 
+      id="company" 
+      name="Empresa" 
+      placeholder="Nombre de tu empresa"
+      maxlength="100">
+
+    <label for="message">Mensaje *</label>
+    <textarea 
+      id="message" 
+      name="Mensaje" 
+      required 
+      placeholder="Cuéntanos qué necesitas..."
+      minlength="10"
+      maxlength="1000"
+      rows="6"></textarea>
+
+    <button type="submit" id="submit-btn">
+      <span id="btn-text">📧 Enviar mensaje</span>
+      <span id="btn-loading" style="display: none;">⏳ Enviando...</span>
+    </button>
+  </form>
+
+  <!-- Mensajes de estado -->
+  <div id="form-status"></div>
+</section>
+
+  <section class="faq-container">
+    <h2 class="faq-title">Preguntas frecuentes</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿Qué servicios ofrece DataSpark?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Ofrecemos análisis de datos, inteligencia de negocios, procesos de automatización, visualización interactiva y consultoría estratégica basada en datos.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿Cómo puede DataSpark ayudar a mi negocio a crecer?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Utilizamos análisis de datos con herramientas avanzadas para identificar oportunidades de crecimiento, optimizar procesos y mejorar la eficiencia operativa. Creamos soluciones personalizadas alineadas con tus objetivos.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿Cómo empiezo a trabajar con DataSpark?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Puedes agendar una llamada inicial para conocer tus necesidades y proponerte un plan personalizado.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿Qué tipo de datos y herramientas utiliza DataSpark?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Usamos bases de datos internas y herramientas como Python, R, Power BI y SQL.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿DataSpark garantiza la confidencialidad y seguridad de mis datos?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Sí, implementamos políticas de privacidad, protocolos de seguridad y firmamos acuerdos de confidencialidad con nuestros clientes.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>¿Qué tipo de resultados puedo esperar al trabajar con DataSpark?</span>
+        <span class="faq-toggle"></span>
+      </div>
+      <div class="faq-answer">Mejor toma de decisiones, aumento en eficiencia operativa y descubrimiento de nuevas oportunidades.</div>
+    </div>
+  </section>
+
+<!-- Sección de Testimonios -->
+<section id="testimonios">
+  <h2 class="fade-in">💬 Lo que dicen nuestros clientes</h2>
+  <p class="testimonios-intro fade-in">La satisfacción de nuestros clientes es nuestra mejor carta de presentación</p>
+
+  <div class="testimonios-count" id="testimonios-count">
+    Cargando testimonios...
+  </div>
+
+  <!-- Carrusel de testimonios -->
+  <div class="carousel-container">
+    <div class="carousel-wrapper" id="carousel-wrapper">
+      <div class="loading-message" style="text-align: center; padding: 3rem; color: #666;">
+        Cargando testimonios...
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" onclick="prevSlide()">←</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
+      <button class="carousel-btn" onclick="nextSlide()">→</button>
+    </div>
+  </div>
+
+  <!-- Formulario para dejar reseña -->
+  <div class="dejar-resena fade-in">
+    <h3>¿Trabajaste con nosotros? ¡Déjanos tu reseña!</h3>
+    <form id="resena-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre-resena">Nombre *</label>
+          <input type="text" id="nombre-resena" required placeholder="Tu nombre completo">
+        </div>
+        
+        <div class="form-group">
+          <label for="empresa-resena">Empresa *</label>
+          <input type="text" id="empresa-resena" required placeholder="Nombre de tu empresa">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="cargo-resena">Cargo *</label>
+        <input type="text" id="cargo-resena" required placeholder="Tu cargo en la empresa">
+      </div>
+
+      <div class="form-group">
+        <label>Calificación *</label>
+        <div class="rating-input">
+          <input type="radio" name="rating" value="5" id="star5" required>
+          <label for="star5" title="5 estrellas">⭐</label>
+          
+          <input type="radio" name="rating" value="4" id="star4">
+          <label for="star4" title="4 estrellas">⭐</label>
+          
+          <input type="radio" name="rating" value="3" id="star3">
+          <label for="star3" title="3 estrellas">⭐</label>
+          
+          <input type="radio" name="rating" value="2" id="star2">
+          <label for="star2" title="2 estrellas">⭐</label>
+          
+          <input type="radio" name="rating" value="1" id="star1">
+          <label for="star1" title="1 estrella">⭐</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="comentario-resena">Tu experiencia *</label>
+        <textarea id="comentario-resena" required placeholder="Cuéntanos sobre tu experiencia trabajando con nosotros..." rows="5"></textarea>
+      </div>
+
+      <button type="submit" class="btn-resena">📝 Enviar Reseña</button>
+    </form>
+
+    <div class="success-message-testimonio" id="success-message-testimonio">
+      ✅ ¡Gracias! Tu reseña ha sido publicada exitosamente.
+    </div>
+  </div>
+</section>
+
+  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>DataSpark</h2>
+        <p>Especialistas en análisis, inteligencia de negocios y soluciones basadas en datos.</p>
+      </div>
+
+
+      <div class="footer-section contact">
+        <h3>Contacto</h3>
+        <p>📧 radimelfi.bautista01@hotmail.com</p>
+        <p>📱 +1 809 855 3512</p>
+      </div>
+
+      <div class="footer-section social">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/feed/" target="_blank" class="linkedin">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://wa.me/18098553512" target="_blank" class="whatsapp">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 DataSpark. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
